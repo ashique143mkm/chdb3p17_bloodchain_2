@@ -1,0 +1,50 @@
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/dashboards.css' />
+
+<button><a class="nav-link" id="list" href="/">Home</a></button>     
+
+
+<h1>Doner Details</h1>
+
+
+<br><br>
+<table id="PatientDetails">
+  <tr>
+    <th>Blood Doner ID</th>
+    {{!-- <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Address</th> --}}
+    <th>Hospital Nmae</th>
+    <th>Hospital Id</th>
+    <th>Observation</th>
+    <th>Blood_Group</th>
+    <th>Date</th>
+  </tr>
+  {{#listing}}
+  <tr class="">
+    <td>{{id}}</td>
+    {{!-- <td>{{name}}</td>
+    <td>{{age}}</td>
+    <td>{{gender}}</td>
+    <td>{{paddress}}</td> --}}
+    <td>{{hospital}}</td>
+    <td>{{doctor}}</td>
+    <td>{{observation}}</td>
+    <td>{{disease}}</td>
+    <td>{{medicine}}</td>
+  </tr>
+  {{/listing}}
+</table>
+
+
+  
+
+
+        
+       
+        
+        
+        
+        

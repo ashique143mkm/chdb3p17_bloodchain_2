@@ -1,0 +1,55 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/dashboards.css' />
+
+
+
+<button><a class="nav-link" id="list" href="/dhome">Home</a></button>
+
+<button><a class="nav-link" id="list" href="/dsearch">List</a></button>
+<button><a class="nav-link" id="list" href="/patientForm">Add</a></button>
+<button><a class="nav-link" id="list" href="/delete">Delete</a></button>
+
+  <button><a type="button" onclick="logout()" class="btn">Logout</a></button> 
+
+<h1>Blood_Doner Details</h1>
+
+  </a>
+<br><br>
+<table id="PatientDetails">
+  
+ 
+  <tr>
+    <th>Doner ID</th>
+    <th>Doner_Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Address</th>
+  
+    <th>Hospital_ID</th>
+    <th>Hospital_Name</th>
+    <th>Observation</th>
+    <th>Blood Group</th>
+    <th>Date</th>
+  
+  </tr>
+  
+  {{#listing}}
+   <tr>
+    
+    <td>{{id}}</td>
+    <td>{{name}}</td>
+    <td>{{age}}</td>
+    <td>{{gender}}</td>
+    <td>{{paddress}}</td>
+    
+    <td>{{doctor}}</td>
+    <td>{{hospital}}</td>
+    <td>{{observation}}</td>
+    <td>{{disease}}</td>
+    <td>{{medicine}}</td>
+  </tr>
+  {{/listing}}
+</table>
+
+
+

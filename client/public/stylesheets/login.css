@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+
+*{
+    font-family: 'quicksand',Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fc0000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, rgb(240, 88, 0), #d0d0f7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, rgb(243, 58, 2), #d4d4e7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.form-modal{
+    position:relative;
+    width:500px;
+    height:400px;
+    margin-top:4em;
+    left:50%;
+    transform:translateX(-50%);
+    background: rgb(204, 20, 20);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(178, 52, 43), rgb(248, 248, 248));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(248, 0, 0), rgb(247, 216, 210)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow:0 3px 20px 0px rgba(0, 0, 0, 0.1)
+}
+
+.form-modal2{
+    position:relative;
+    width:500px;
+    height:100px;
+    margin-top:4em;
+    left:50%;
+    transform:translateX(-50%);
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow:0 3px 20px 0px rgba(0, 0, 0, 0.1)
+}
+
+.form-modal2 input{
+    position: relative;
+    width:100%;
+    font-size:1em;
+    padding:1.2em 1.7em 1.2em 1.7em;
+    margin-top:0.6em;
+    margin-bottom:0.6em;
+    border-radius: 20px;
+    border:none;
+    background:#ebebeb;
+    outline:none;
+    font-weight: bold;
+    transition:0.4s;
+}
+.form-modal2 a{
+    position: relative;
+    width:100%;
+    font-size:1em;
+    padding:1.2em 1.7em 1.2em 1.7em;
+    margin-top:0.6em;
+    margin-bottom:0.6em;
+    border-radius: 20px;
+    border:none;
+    background:#ebebeb;
+    outline:none;
+    font-weight: bold;
+    transition:0.4s;
+}
+.form-modal2 a{
+  position: relative;
+  width:100%;
+  font-size:1em;
+  padding:1.2em 1.7em 1.2em 1.7em;
+  margin-top:0.6em;
+  margin-bottom:0.6em;
+  border-radius: 20px;
+  border:none;
+  background:#ebebeb;
+  outline:none;
+  font-weight: bold;
+  transition:0.4s;
+}
+
+.form-modal button{
+    cursor: pointer;
+    position: relative;
+    text-transform: capitalize;
+    font-size:1em;
+    border-radius: 20px;
+    z-index: 2;
+    outline: none;
+    background:#fff;
+    transition:0.2s;
+}
+
+.form-modal .btn{
+    border-radius: 20px;
+    border:none;
+    font-weight: bold;
+    font-size:1.2em;
+    padding:0.8em 1em 0.8em 1em!important;
+    transition:0.5s;
+    border:1px solid #ebebeb;
+    margin-bottom:0.5em;
+    margin-top:0.5em;
+}
+
+.form-modal .login , .form-modal .signup{
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-size: 28px;
+    font-weight: bold;
+    color:#ffff;
+}
+
+.form-modal .login:hover , .form-modal .signup:hover{
+    background:#222;
+}
+
+.form-toggle{
+    position: relative;
+    width:100%;
+    height:auto;
+}
+
+
+
+.form-toggle button{
+    
+    position: relative;
+    width:100%;
+    font-size:1em;
+    padding:1.2em 1.7em 1.2em 1.7em;
+    margin-top:0.6em;
+    margin-bottom:0.6em;
+    border-radius: 20px;
+    border:none;
+    background:#ebebeb;
+    outline:none;
+    font-weight: bold;
+    transition:0.4s;
+
+}
+
+.form-toggle button:nth-child(1){
+    border-bottom-right-radius: 20px;
+}
+
+.form-toggle button:nth-child(2){
+    border-bottom-left-radius: 20px;
+}
+
+#man-toggle{
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(170, 38, 38), #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 25px;
+    border-radius: 50%;
+    color:#ffff;
+}
+
+
+.form-modal form{
+    position: relative;
+    width:90%;
+    height:auto;
+    left:50%;
+    transform:translateX(-50%);  
+}
+.form-modal2 form{
+    position: relative;
+    width:50%;
+    height:auto;
+    top:30px;
+    left:50%;
+    transform:translateX(-50%);  
+}
+
+#man-form , #dep-form{
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+#dep-form{
+    display: none;
+}
+
+
+#man-form button , #dep-form button{
+    width:100%;
+    margin-top:0.5em;
+    padding:0.6em;
+}
+
+.form-modal input{
+    position: relative;
+    width:100%;
+    font-size:1em;
+    padding:1.2em 1.7em 1.2em 1.7em;
+    margin-top:0.6em;
+    margin-bottom:0.6em;
+    border-radius: 20px;
+    border:none;
+    background:#ebebeb;
+    outline:none;
+    font-weight: bold;
+    transition:0.4s;
+}
+
+.form-modal input:focus , .form-modal input:active{
+    transform:scaleX(1.02);
+}
+
+.form-modal input::-webkit-input-placeholder{
+    color:#A9A9A9;
+}
+
+
+.form-modal p{
+    font-size:16px;
+    font-weight: bold;
+}
+
+.form-modal p a{
+    color:#33cc99;
+    text-decoration: none;
+    transition:0.2s;
+}
+
+.form-modal p a:hover{
+    color:#222;
+}
+
+
+.form-modal i {
+    position: absolute;
+    left:10%;
+    top:50%;
+    transform:translateX(-10%) translateY(-50%); 
+}
+
+
+.-box-sd-effect:hover{
+    box-shadow: 0 4px 8px hsla(210,2%,84%,.2);
+}
+
+@media only screen and (max-width:500px){
+    .form-modal{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    i{
+        display: none!important;
+    }
+}
+h1 {
+    padding-top: 1em;
+    color:#d5dcda;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    color:#33cc99;
+    font-size: 25px;
+    text-align: center;
+}
+
+.custom {
+    border-radius:20px;
+    border:none;
+    font-weight: bold;
+    font-size:1.0em;
+    padding:1.8em 1em 0.8em 1em;
+    transition:0.5s;
+    border:5px solid #ebebeb;
+    margin-bottom:0.5em;
+    margin-top:0.5em;
+    align-self: center;
+    align-content: right;
+
+}
+
+
+
+@import "compass/css3";
+
+/***********************
+ * Essential Structure *
+ ***********************/
+.flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 70%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 100%;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+.flexsearch {
+  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+}
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+ 	height: 60px;
+  padding: 0 46px 0 10px;
+	border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
+	border-width: 5px;
+  margin-top: 15px;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+	font-size: 26px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+	
+.flexsearch--submit {
+  position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+  padding: 0;
+  border: none;
+	margin-top: 20px; /* margin-top + border-width */
+  margin-right: 5px; /* border-width */
+	background: transparent;
+  color: #888;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #333; 
+}
+
+.flexsearch--submit:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* 
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+} */
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 70px;
+  border-radius: 30px 0px 0 30px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 77px;
+  height: 70px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0  30px 30px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.searchTerm,#input {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

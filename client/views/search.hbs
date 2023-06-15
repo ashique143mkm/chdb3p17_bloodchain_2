@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blood_Chain</title>
+        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/fontawesome.min.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Noto+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+        <link rel='stylesheet' href='/stylesheets/login.css' />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src='/javascripts/main.js'></script>
+        
+        <link rel='stylesheet' href='/stylesheets/login.css' />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-capitalize main-font-family">
+            <div class="container">
+                <a class="navbar-brand" href="/"><img src="imgs/logo.jpg" alt="#" /></a>
+                <div class="collapse navbar-collapse" id="show-menu">
+                    <ul class="navbar-nav active"></ul>
+                        <li class="nav-item active"></li>
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">   
+                            <a class="nav-link" href="/search">Blood_Doner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/dlogin">Hospital</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+        
+        <div class="about lobster-font-family">
+            <div class="container"></br></br>
+                <h2 class="text-center text-capitalize">Search Here...!</h2>
+                <img src="imgs/shape.png">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+
+                        <div class="form-modal">
+                             <div class="form-toggle">
+                                <button id="man-toggle">Blood Doner Details</button>
+                            </div>
+                         <div id="man-form">
+                            <form id="manform" method="POST" action="/listPatient">
+                             <input type="text" name="dId" placeholder="Enter Doctors Id" />
+                            <input type="text" name="sId" placeholder="Enter Your Id" />
+            
+                         <table>
+                             <tr>
+                             <td ><input type="submit" value = "Search" /></td>
+                             </tr>
+                        </table>
+                            </form>
+                        </div>
+                    </div> 
+                        </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="img"></div>
+                    </div>
+                </div>
+                
+                <div class="row">   
+                    
+                    <div class="col-lg-8 col-12">
+                       
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <footer class="noto-font-family">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Useful links</h3>
+                            <ul class="text-capitalize">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Blood_donation">About</a></li>
+                                
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Find us</h3>
+                            <p>MKM Solutions<br>
+                                Malappuram,India<br>
+                                (+91) 8111814881<br>
+                                (+11) 8111814882<br>
+                                mkmsevavgd@gmail.com
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 form">
+                            <h3>News letter</h3>
+                            <form>
+                                <input type="email" placeholder="Email">
+                                <input type="submit">
+                            </form>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="copyright noto-font-family">
+            <p>© 2020 All Rights Reserved. Design by <a href="https://html.design/">MKM Solutions</a></p>
+        </div>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            });
+        </script>
+    </body>
+</html>
